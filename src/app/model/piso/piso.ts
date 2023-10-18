@@ -7,6 +7,6 @@ export class Piso {
         public edificio: Edificio,
         public totalVehiculos: number,
         public espaciosDisponibles: number,
-        public vehiculos: Vehiculo[]
+        public vehiculos: Vehiculo[]|null
     ){}
 }

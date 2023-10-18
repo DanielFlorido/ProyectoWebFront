@@ -6,6 +6,6 @@ export class TipoVehiculo {
         public tipo: string,
         public tarifa: number,
         public area: number,
-        public pisos: Piso[]
+        public pisos: Piso[]|null
     ){}
 }
