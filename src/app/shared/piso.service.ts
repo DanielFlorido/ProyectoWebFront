@@ -26,5 +26,9 @@ export class PisoService {
     return this.http.post<Vehiculo>("http://localhost:8090/gestionParqueaderos/crearVehiculo", vehiculo, this.httpOptions);
   }
 
+  registrarSalida(vehiculo: Vehiculo): Observable<Vehiculo> {
+    return this.http.post<Vehiculo>("http://localhost:8090/gestionParqueaderos/registrarSalida", vehiculo, this.httpOptions);
+  }
+
 
 }

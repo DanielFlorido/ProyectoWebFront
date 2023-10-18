@@ -4,6 +4,7 @@ import { Vehiculo } from './model/vehiculo/vehiculo';
 import { PisoService } from './shared/piso.service';
 import { Component } from '@angular/core';
 import { Edificio } from './model/edificio/edificio';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -39,4 +40,14 @@ export class AppComponent {
     });
   }
 
+  registrarSalida() {
+    this.pisoService.registrarSalida(this.vehiculo).subscribe({
+      next: dato => console.log(dato),
+      error: msg => {
+        console.error("Hubo un error:");
+        console.error(msg);
+      }
+    });
+  }
+  
 }
