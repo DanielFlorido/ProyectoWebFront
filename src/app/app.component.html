@@ -1,4 +1,18 @@
 <div>
     <div><button (click)="registrarVehiculo()">registrarVehiculo</button></div>
-    <div><button (click)="crearVehiculo()">crearVehiculo</button></div>
-  </div>
+    <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+      <label for="placa">Placa:</label>
+      <input type="text" id="placa" formControlName="placa"><br>
+
+      <label for="pisoId">Piso:</label>
+      <input type="text" id="pisoId"  formControlName="pisoId"><br>
+
+      <label for="tipoVehiculoS">Tipo de Vehículo:</label>
+      <input type="text" id="tipoVehiculos"  formControlName="tipoVehiculos"><br>
+
+      <label for="horaLlegada">Hora de Llegada:</label>
+      <input type="text" id="horaLlegada"  formControlName="horaLlegada"><br>
+
+      <button (click)="crearVehiculo()">Registrar Vehículo</button>
+  </form>
+</div>>
