@@ -1,0 +1,38 @@
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>tipoVehiculo</th>
+                <th>placa</th>
+                <th>piso</th>
+                <th>verVehiculo</th>
+                <th>Retirar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let vehiculo of vehiculos;">
+                <td>{{vehiculo.id}}</td>
+                <td>{{vehiculo.tipoVehiculo.tipo}}</td>
+                <td>{{vehiculo.placa}}</td>
+                <td>
+                    <ng-container *ngIf="vehiculo.piso">
+                        {{vehiculo.piso.id}}
+                    </ng-container>
+                    <ng-container *ngIf="!vehiculo.piso">
+                        No Floor
+                    </ng-container>
+                </td>
+                <td>
+                    <a [routerLink]="['/gestionParqueadero/buscarVehiculo/', vehiculo.id]">
+                        Detalles
+                    </a>                    
+                </td>
+                <td>
+                    <a href="">Cobrar</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+

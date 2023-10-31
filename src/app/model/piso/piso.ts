@@ -3,7 +3,7 @@ import { Vehiculo } from "../vehiculo/vehiculo";
 
 export class Piso {
     constructor(
-        public id: number|null,
+        public id: number,
         public edificio: Edificio,
         public totalVehiculos: number,
         public espaciosDisponibles: number,
