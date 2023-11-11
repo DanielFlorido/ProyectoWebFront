@@ -1,6 +1,7 @@
 import { HttpClient, HttpHeaderResponse, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { DtoVehiculo } from 'src/app/dto/dtoVehiculo/dtoVehiculo';
 import { Vehiculo } from 'src/app/model/vehiculo/vehiculo';
 
 @Injectable({
@@ -22,5 +23,9 @@ export class VehiculoService {
 
   findById(id:number): Observable<Vehiculo>{
     return this.http.get<Vehiculo>(`http://localhost:8090/gestionParqueaderos/buscarVehiculo/${id}`)
+  }
+
+  retirarVehiculo(id: number): Observable<DtoVehiculo>{
+    return this.http.get<DtoVehiculo>(`http://localhost:8090/gestionParqueaderos/registrarSalida/${id}`)
   }
 }

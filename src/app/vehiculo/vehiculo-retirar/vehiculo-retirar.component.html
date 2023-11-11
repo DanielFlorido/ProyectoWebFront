@@ -1,1 +1,6 @@
-<p>vehiculo-retirar works!</p>
+<div *ngIf="dtoVehiculo$ | async as dtoVehiculo">
+    <h1>vehiculo retirado</h1>
+    <p>{{dtoVehiculo.vehiculo.id}}</p>  
+    <p>{{dtoVehiculo.tiempo}}</p>
+    <p>{{dtoVehiculo.montoTotal}}</p>  
+</div>

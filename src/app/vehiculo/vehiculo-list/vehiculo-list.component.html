@@ -29,7 +29,9 @@
                     </a>                    
                 </td>
                 <td>
-                    <a href="">Cobrar</a>
+                    <a [routerLink]="['/gestionParqueadero/retirarVehiculo/', vehiculo.id]">
+                        Cobrar
+                    </a>
                 </td>
             </tr>
         </tbody>
