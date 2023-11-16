@@ -6,6 +6,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { VehiculoListComponent } from './vehiculo/vehiculo-list/vehiculo-list.component';
 import { VehiculoViewComponent } from './vehiculo/vehiculo-view/vehiculo-view.component';
 import { VehiculoRetirarComponent } from './vehiculo/vehiculo-retirar/vehiculo-retirar.component';
+import { VehiculoCrearComponent } from './vehiculo/vehiculo-crear/vehiculo-crear/vehiculo-crear.component';
+import { PisoListComponent } from './piso/piso-list/piso-list/piso-list.component';
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import { VehiculoRetirarComponent } from './vehiculo/vehiculo-retirar/vehiculo-r
     AppComponent,
     VehiculoListComponent,
     VehiculoViewComponent,
-    VehiculoRetirarComponent
+    VehiculoRetirarComponent,
+    VehiculoCrearComponent,
+    PisoListComponent
   ],
   imports: [
     BrowserModule,

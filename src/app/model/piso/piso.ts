@@ -1,3 +1,4 @@
+import { TipoVehiculo } from './../vehiculo/tipo-vehiculo';
 import { Edificio } from "../edificio/edificio";
 import { Vehiculo } from "../vehiculo/vehiculo";
 
@@ -7,6 +8,7 @@ export class Piso {
         public edificio: Edificio,
         public totalVehiculos: number,
         public espaciosDisponibles: number,
+        public tipoVehiulo : TipoVehiculo,
         public vehiculos: Vehiculo[]|null
     ){}
 }

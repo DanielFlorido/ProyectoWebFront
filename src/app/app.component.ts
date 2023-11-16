@@ -15,9 +15,9 @@ export class AppComponent {
   title = 'ProyectoWebFront';
 
   constructor(private pisoService: PisoService) { }
-  edificio: Edificio = new Edificio();
-  piso: Piso = new Piso(1, this.edificio, 1, 1, null);
+  edificio: Edificio = new Edificio(); 
   tipoVehiculo: TipoVehiculo = new TipoVehiculo(1, "", 1, 1, null);
+  piso: Piso = new Piso(1, this.edificio, 1, 1,this.tipoVehiculo, null);
   vehiculo: Vehiculo = new Vehiculo(1, "", this.piso , this.tipoVehiculo, 1200)
 
   registrarVehiculo() {

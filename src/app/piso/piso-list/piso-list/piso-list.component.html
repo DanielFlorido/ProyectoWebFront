@@ -1,0 +1,23 @@
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>edificio</th>
+                <th>total vehiculos</th>
+                <th>Espacios Disponibles</th>
+                <th>Tipo Vehiculo</th>
+                <th>Ver vehiculos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let piso of pisos;">
+            <td>{{piso.id}}</td>
+            <td>{{piso.edificio}}</td>
+            <td>{{piso.totalVehiculos}}</td>
+            <td>{{piso.tipoVehiulo.tipo}}</td>
+            <td>ver Vehiculos</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

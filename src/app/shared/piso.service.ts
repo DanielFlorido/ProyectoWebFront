@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaderResponse, HttpHeaders, HttpParams } from '@angula
 import { Observable } from 'rxjs';
 import { UpdateOperationDTO } from '../dto/update-operation-dto';
 import { Vehiculo } from '../model/vehiculo/vehiculo';
+import { Piso } from '../model/piso/piso';
 
 
 @Injectable({
@@ -15,20 +16,23 @@ export class PisoService {
       "Content-Type": "application/json"
     })
   };
-
+  private url="http://localhost:8080/gestionParqueaderos/"
   constructor(private http: HttpClient) { }
 
   registrarVehiculo(vehiculo: Vehiculo): Observable<Vehiculo> {
-    return this.http.post<Vehiculo>("http://localhost:8080/gestionParqueaderos/registrarVehiculo", vehiculo, this.httpOptions);
+    return this.http.post<Vehiculo>(`${this.url}/registrarVehiculo`, vehiculo, this.httpOptions);
   }
 
   crearVehiculo(vehiculo: Vehiculo): Observable<Vehiculo> {
-    return this.http.post<Vehiculo>("http://localhost:8090/gestionParqueaderos/crearVehiculo", vehiculo, this.httpOptions);
+    return this.http.post<Vehiculo>(`${this.url}/crearVehiculo`, vehiculo, this.httpOptions);
   }
 
   registrarSalida(vehiculo: Vehiculo): Observable<Vehiculo> {
-    return this.http.post<Vehiculo>("http://localhost:8090/gestionParqueaderos/registrarSalida", vehiculo, this.httpOptions);
+    return this.http.post<Vehiculo>(`${this.url}/registrarSalida`, vehiculo, this.httpOptions);
   }
-
+  
+  findAll(): Observable<Piso[]>{
+    return this.http.get<Piso[]>(`${this.url}/pisos`,this.httpOptions); 
+  }
 
 }
