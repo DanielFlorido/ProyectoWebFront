@@ -12,11 +12,12 @@
         </thead>
         <tbody>
             <tr *ngFor="let piso of pisos;">
-            <td>{{piso.id}}</td>
-            <td>{{piso.edificio}}</td>
-            <td>{{piso.totalVehiculos}}</td>
-            <td>{{piso.tipoVehiulo.tipo}}</td>
-            <td>ver Vehiculos</td>
+                <td>{{piso.id}}</td>
+                <td>{{piso.edificio.id}}</td>
+                <td>{{piso.totalVehiculos}}</td>
+                <td>{{piso.espaciosDisponibles}}</td>
+                <td>{{piso.tipoVehiculo.tipo}}</td>
+                <a [routerLink]="['/gestionParqueadero/list']">ver Vehiculos</a>
             </tr>
         </tbody>
     </table>

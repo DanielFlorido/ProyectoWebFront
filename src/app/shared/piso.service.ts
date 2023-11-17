@@ -16,7 +16,7 @@ export class PisoService {
       "Content-Type": "application/json"
     })
   };
-  private url="http://localhost:8080/gestionParqueaderos/"
+  private url="http://localhost:8090/gestionParqueaderos"
   constructor(private http: HttpClient) { }
 
   registrarVehiculo(vehiculo: Vehiculo): Observable<Vehiculo> {

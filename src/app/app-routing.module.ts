@@ -10,7 +10,7 @@ const routes: Routes = [
   {path: 'gestionParqueadero/list', component: VehiculoListComponent},
   {path: 'gestionParqueadero/retirarVehiculo/:id', component: VehiculoRetirarComponent},
   {path: 'gestionParqueadero/pisos', component:PisoListComponent},
-  { path: '', pathMatch: 'full', redirectTo: '/gestionParqueadero/list' }
+  { path: '', pathMatch: 'full', redirectTo: '/gestionParqueadero/pisos' }
 ];
 
 @NgModule({
