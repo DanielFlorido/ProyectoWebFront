@@ -12,6 +12,7 @@ import { VehiculoListByPisoComponent } from './vehiculo/vehiculo-list-by-piso/ve
 import { HeaderComponent } from './header/header/header.component';
 import { FormsModule } from '@angular/forms';
 import { UsuarioCrearComponent } from './usuario/usuario-crear/usuario-crear/usuario-crear.component';
+import { FooterComponent } from './footer/footer/footer.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { UsuarioCrearComponent } from './usuario/usuario-crear/usuario-crear/usu
     PisoListComponent,
     VehiculoListByPisoComponent,
     HeaderComponent,
-    UsuarioCrearComponent
+    UsuarioCrearComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

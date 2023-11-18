@@ -25,3 +25,11 @@ tr:hover {
 td:a {
     color: #27ae60;
 }
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

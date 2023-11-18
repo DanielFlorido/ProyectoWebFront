@@ -1,5 +1,8 @@
 <div *ngIf="vehiculo$ | async as vehiculo">
-    <h1>Vehiculo</h1>
+    <h1>Vehiculo</h1>    
     <p>{{vehiculo?.id}}</p>    
     <p>{{vehiculo?.placa}}</p>
+    <p>{{vehiculo?.horaLlegada}}</p>
+    <p>{{vehiculo?.tipoVehiculo?.tipo}}</p>
+    <p>{{vehiculo?.tipoVehiculo?.tarifa}}</p>
 </div>

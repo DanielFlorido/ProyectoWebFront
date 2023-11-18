@@ -4,7 +4,8 @@ table {
     margin: 0 auto;
 }
 
-th, td {
+th,
+td {
     border: 1px solid black;
     padding: 8px;
     text-align: left;
@@ -13,4 +14,24 @@ th, td {
 th {
     background-color: orange;
     color: white;
+}
+
+app-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    /* Ajusta según sea necesario */
+    background-color: #333;
+    /* Ajusta según sea necesario */
+    z-index: 1000;
+    /* Ajusta según sea necesario */
+}
+
+router-outlet {
+    margin-top: 50px;
+    /* Ajusta según sea necesario para evitar superposiciones */
+    padding: 20px;
+    /* Ajusta según sea necesario */
 }

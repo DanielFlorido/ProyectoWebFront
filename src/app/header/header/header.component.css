@@ -44,3 +44,7 @@ nav ul li.login {
     /* Verde para la sección actual */
     color: #fff;
 }
+div {
+    width: auto;
+    height: 70px;
+}

@@ -4,7 +4,7 @@ import { Piso } from 'src/app/model/piso/piso';
 import { Vehiculo } from './../../../model/vehiculo/vehiculo';
 import { Component, Input, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-vehiculo-crear',
@@ -12,7 +12,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./vehiculo-crear.component.css']
 })
 export class VehiculoCrearComponent implements OnInit{
-  constructor(private route: ActivatedRoute,private vehiculoService: VehiculoService, private pisoService:PisoService){}
+  constructor(private router : Router ,private route: ActivatedRoute,private vehiculoService: VehiculoService, private pisoService:PisoService){}
   ngOnInit(): void {
     this.route.params.subscribe(params => {
       if(params['id']){
@@ -37,6 +37,7 @@ export class VehiculoCrearComponent implements OnInit{
               // Y finalmente, guardamos el vehículo con el Piso asignado
               this.pisoService.guardarVehiculo(this.idPiso, this.vehiculo).subscribe(
                 (guardarRespuesta) => {
+                  this.router.navigate(['gestionParqueadero/pisos/vehiculos/',this.idPiso])
                   console.log('Vehículo guardado en el Piso:', guardarRespuesta);
                 },
                 (guardarError) => {
