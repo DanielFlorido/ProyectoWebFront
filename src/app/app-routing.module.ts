@@ -7,6 +7,7 @@ import { PisoListComponent } from './piso/piso-list/piso-list/piso-list.componen
 import { VehiculoListByPisoComponent } from './vehiculo/vehiculo-list-by-piso/vehiculo-list-by-piso/vehiculo-list-by-piso.component';
 import { VehiculoCrearComponent } from './vehiculo/vehiculo-crear/vehiculo-crear/vehiculo-crear.component';
 import { HomeComponent } from './home/home/home.component';
+import { FAQComponent } from './FAQ/faq/faq.component';
 
 const routes: Routes = [
   {path: 'gestionParqueadero/buscarVehiculo/:id', component: VehiculoViewComponent},
@@ -16,8 +17,10 @@ const routes: Routes = [
   {path: 'gestionParqueadero/pisos/vehiculos/:id', component: VehiculoListByPisoComponent},
   {path: 'gestionParqueadero/pisos/:id/nuevoVehiculo',  component: VehiculoCrearComponent},
   {path: 'gestionParqueadero/home', component: HomeComponent},
-  {path: '', pathMatch: 'full', redirectTo: 'gestionParqueadero/home' }
-];
+  {path: '', pathMatch: 'full', redirectTo: 'gestionParqueadero/home' },
+  {path: 'gestionParqueadero/FAQ', component: FAQComponent}
+]; 
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { UsuarioCrearComponent } from './usuario/usuario-crear/usuario-crear/usuario-crear.component';
 import { FooterComponent } from './footer/footer/footer.component';
 import { HomeComponent } from './home/home/home.component';
+import { FAQComponent } from './FAQ/faq/faq.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { HomeComponent } from './home/home/home.component';
     HeaderComponent,
     UsuarioCrearComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    FAQComponent
   ],
   imports: [
     BrowserModule,
