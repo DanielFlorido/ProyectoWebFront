@@ -11,6 +11,7 @@ import { PisoListComponent } from './piso/piso-list/piso-list/piso-list.componen
 import { VehiculoListByPisoComponent } from './vehiculo/vehiculo-list-by-piso/vehiculo-list-by-piso/vehiculo-list-by-piso.component';
 import { HeaderComponent } from './header/header/header.component';
 import { FormsModule } from '@angular/forms';
+import { UsuarioCrearComponent } from './usuario/usuario-crear/usuario-crear/usuario-crear.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { FormsModule } from '@angular/forms';
     VehiculoCrearComponent,
     PisoListComponent,
     VehiculoListByPisoComponent,
-    HeaderComponent
+    HeaderComponent,
+    UsuarioCrearComponent
   ],
   imports: [
     BrowserModule,

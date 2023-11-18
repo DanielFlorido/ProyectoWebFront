@@ -27,7 +27,7 @@ export class VehiculoService {
   }
 
   retirarVehiculo(id: number): Observable<DtoVehiculo>{
-    return this.http.get<DtoVehiculo>(`http://localhost:8090/gestionParqueaderos/registrarSalida/${id}`)
+    return this.http.get<DtoVehiculo>(`${this.url}/pisos/registrarSalida/${id}`)
   }
   crearVehiculo(vehiculo : Vehiculo): Observable<Vehiculo>{
     return this.http.post<Vehiculo>("http://localhost:8090/gestionParqueaderos/crearVehiculo", vehiculo, this.httpOptions)

@@ -28,7 +28,7 @@ export class PisoService {
   }
 
   registrarSalida(vehiculo: Vehiculo): Observable<Vehiculo> {
-    return this.http.post<Vehiculo>(`${this.url}/registrarSalida`, vehiculo, this.httpOptions);
+    return this.http.post<Vehiculo>(`${this.url}/pisos/registrarSalida`, vehiculo, this.httpOptions);
   }
   recuperarPiso(id:number){
     return this.http.get<Piso>(`${this.url}/pisos/${id}`);

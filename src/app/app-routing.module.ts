@@ -10,7 +10,7 @@ import { VehiculoCrearComponent } from './vehiculo/vehiculo-crear/vehiculo-crear
 const routes: Routes = [
   {path: 'gestionParqueadero/buscarVehiculo/:id', component: VehiculoViewComponent},
   {path: 'gestionParqueadero/list', component: VehiculoListComponent},
-  {path: 'gestionParqueadero/retirarVehiculo/:id', component: VehiculoRetirarComponent},
+  {path: 'gestionParqueadero/pisos/retirarVehiculo/:id', component: VehiculoRetirarComponent},
   {path: 'gestionParqueadero/pisos', component:PisoListComponent},
   {path: 'gestionParqueadero/pisos/vehiculos/:id', component: VehiculoListByPisoComponent},
   {path: 'gestionParqueadero/pisos/:id/nuevoVehiculo',  component: VehiculoCrearComponent},
