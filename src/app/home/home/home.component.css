@@ -1,0 +1,47 @@
+.hero-section {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/taller-3-6cd33.appspot.com/o/images%2Fparking.jpg?alt=media&token=4a6ddd16-1852-47e7-90c2-7cce78859e54');
+    /* Cambia la ruta por la imagen que desees */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #267bb5;
+}
+
+.features-section {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.feature {
+    margin-bottom: 40px;
+}
+
+.feature img {
+    max-width: 100%;
+    height: auto;
+}
+
+.feature h2 {
+    margin-top: 20px;
+}
