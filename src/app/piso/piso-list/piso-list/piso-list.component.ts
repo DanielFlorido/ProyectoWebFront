@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Route, Router } from '@angular/router';
 import { Piso } from 'src/app/model/piso/piso';
 import { PisoService } from 'src/app/shared/piso.service';
 
@@ -11,9 +12,12 @@ export class PisoListComponent implements OnInit{
 
   pisos: Piso[]=[]
 
-  constructor(private pisoService: PisoService){}
+  constructor(private pisoService: PisoService, private router: Router){}
 
   ngOnInit(): void {
     this.pisoService.findAll().subscribe(pisos => this.pisos = pisos)
+  }
+  verVehiculos(pisoId: number){
+    this.router.navigate(['gestionParqueadero/pisos/vehiculos/', pisoId]);
   }
 }

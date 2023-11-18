@@ -16,6 +16,7 @@ export class VehiculoService {
       "Content-Type": "application/json"
     })
   };
+  private url="http://localhost:8090/gestionParqueaderos"
 
   findAll(): Observable<Vehiculo[]>{
     return this.http.get<Vehiculo[]>("http://localhost:8090/gestionParqueaderos/listarVehiculos")
@@ -30,5 +31,8 @@ export class VehiculoService {
   }
   crearVehiculo(vehiculo : Vehiculo): Observable<Vehiculo>{
     return this.http.post<Vehiculo>("http://localhost:8090/gestionParqueaderos/crearVehiculo", vehiculo, this.httpOptions)
+  }
+  getVehiculosByPiso(idPiso: number): Observable<Vehiculo[]>{
+    return this.http.get<Vehiculo[]>(`${this.url}/pisos/vehiculos/${idPiso}`)
   }
 }

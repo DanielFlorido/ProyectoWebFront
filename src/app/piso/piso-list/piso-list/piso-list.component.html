@@ -13,11 +13,13 @@
         <tbody>
             <tr *ngFor="let piso of pisos;">
                 <td>{{piso.id}}</td>
-                <td>{{piso.edificio.id}}</td>
+                <td>{{piso.edificio.name}}</td>
                 <td>{{piso.totalVehiculos}}</td>
                 <td>{{piso.espaciosDisponibles}}</td>
                 <td>{{piso.tipoVehiculo.tipo}}</td>
-                <a [routerLink]="['/gestionParqueadero/list']">ver Vehiculos</a>
+                <td>
+                    <a (click)="verVehiculos(piso.id)" style="cursor: pointer;">ver Vehiculos</a>
+                </td>
             </tr>
         </tbody>
     </table>
