@@ -5,8 +5,8 @@ export class Vehiculo {
     constructor(
         public id: number,
         public placa: string,
-        public piso: Piso,
-        public tipoVehiculo: TipoVehiculo,
+        public piso: Piso|null,
+        public tipoVehiculo: TipoVehiculo|null,
         public horaLlegada: number
     ){}
 }

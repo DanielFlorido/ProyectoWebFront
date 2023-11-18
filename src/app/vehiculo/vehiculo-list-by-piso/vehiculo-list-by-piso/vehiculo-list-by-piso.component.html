@@ -13,7 +13,7 @@
         <tbody>
             <tr *ngFor="let vehiculo of vehiculos;">
                 <td>{{vehiculo.id}}</td>
-                <td>{{vehiculo.tipoVehiculo.tipo}}</td>
+                <td>{{vehiculo.tipoVehiculo?.tipo}}</td>
                 <td>{{vehiculo.placa}}</td>
                 <td>
                     <ng-container *ngIf="vehiculo.piso">
@@ -36,4 +36,5 @@
             </tr>
         </tbody>
     </table>
+    <button (click)="nuevoVehiculo()">AgregarNuevo</button>
 </div>

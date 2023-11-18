@@ -1,1 +1,15 @@
-<p>vehiculo-crear works!</p>
+<div>
+    <form (ngSubmit)="guardarVehiculo()" #vehiculoForm="ngForm">
+        <div>
+            <label for="placa">Placa:</label>
+            <input type="text" id="placa" name="placa" [(ngModel)]="vehiculo.placa" required>
+        </div>
+    
+        <div>
+            <label for="horaLlegada">Hora de Llegada:</label>
+            <input type="number" id="horaLlegada" name="horaLlegada" [(ngModel)]="vehiculo.horaLlegada" required>
+        </div>
+    
+        <button type="submit">Guardar Vehiculo</button>
+    </form>
+</div>

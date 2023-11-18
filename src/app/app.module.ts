@@ -10,6 +10,7 @@ import { VehiculoCrearComponent } from './vehiculo/vehiculo-crear/vehiculo-crear
 import { PisoListComponent } from './piso/piso-list/piso-list/piso-list.component';
 import { VehiculoListByPisoComponent } from './vehiculo/vehiculo-list-by-piso/vehiculo-list-by-piso/vehiculo-list-by-piso.component';
 import { HeaderComponent } from './header/header/header.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { HeaderComponent } from './header/header/header.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
