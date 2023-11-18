@@ -15,6 +15,7 @@ import { UsuarioCrearComponent } from './usuario/usuario-crear/usuario-crear/usu
 import { FooterComponent } from './footer/footer/footer.component';
 import { HomeComponent } from './home/home/home.component';
 import { FAQComponent } from './FAQ/faq/faq.component';
+import { TipoVehiculoSliderComponent } from './tipo-vehiculo/tipo-vehiculo-slider/tipo-vehiculo-slider/tipo-vehiculo-slider.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { FAQComponent } from './FAQ/faq/faq.component';
     UsuarioCrearComponent,
     FooterComponent,
     HomeComponent,
-    FAQComponent
+    FAQComponent,
+    TipoVehiculoSliderComponent
   ],
   imports: [
     BrowserModule,

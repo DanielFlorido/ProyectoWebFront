@@ -1,0 +1,12 @@
+<div class="slider-container">
+    <div class="slider" [style.transform]="'translateX(' + (-activeIndex * 100) + '%)'">
+        <div *ngFor="let vehiculo of vehiculos; let i = index" class="slide" (click)="setActiveIndex(i)">
+            <img [src]="vehiculo.imagen" alt="{{ vehiculo.tipo }}">
+            <div class="slide-content">
+                <h2>{{ vehiculo.tipo }}</h2>
+                <p>Tarifa: {{ vehiculo.tarifa }}</p>
+                <p>Tipo de Vehículo: {{ vehiculo.tipo }}</p>
+            </div>
+        </div>
+    </div>
+</div>
