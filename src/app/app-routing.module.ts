@@ -9,6 +9,7 @@ import { VehiculoCrearComponent } from './vehiculo/vehiculo-crear/vehiculo-crear
 import { HomeComponent } from './home/home/home.component';
 import { FAQComponent } from './FAQ/faq/faq.component';
 import { TipoVehiculoSliderComponent } from './tipo-vehiculo/tipo-vehiculo-slider/tipo-vehiculo-slider/tipo-vehiculo-slider.component';
+import { UsuarioCrearComponent } from './usuario/usuario-crear/usuario-crear/usuario-crear.component';
 
 const routes: Routes = [
   {path: 'gestionParqueadero/buscarVehiculo/:id', component: VehiculoViewComponent},
@@ -20,7 +21,7 @@ const routes: Routes = [
   {path: 'gestionParqueadero/home', component: HomeComponent},
   {path: 'gestionParqueadero/tarifas', component: TipoVehiculoSliderComponent},
   {path: '', pathMatch: 'full', redirectTo: 'gestionParqueadero/home' },
-  {path: 'gestionParqueadero/FAQ', component: FAQComponent}
+  {path: 'gestionParqueadero/FAQ', component: FAQComponent},
 ]; 
 
 

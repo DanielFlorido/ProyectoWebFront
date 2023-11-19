@@ -1,5 +1,5 @@
 /* Estilos generales para el contenedor principal */
-.vehiculo-retirado-container {
+div {
     max-width: 400px;
     margin: 20px auto;
     padding: 20px;
@@ -9,31 +9,32 @@
   }
   
   /* Estilos para el título h1 */
-  .vehiculo-retirado-title {
+  h1{
     font-size: 24px;
     color: #333;
     margin-bottom: 10px;
+    text-align: center;
   }
   
   /* Estilos para los párrafos */
-  .vehiculo-retirado-info {
+  p {
     margin: 10px 0;
     font-size: 16px;
     color: #555;
   }
   
   /* Estilos específicos para el ID del vehículo */
-  .vehiculo-retirado-id {
+  p:nth-child(2) {
     font-weight: bold;
   }
   
   /* Estilos específicos para el tiempo */
-  .vehiculo-retirado-tiempo {
+  p:nth-child(5){
     font-style: italic;
   }
   
   /* Estilos específicos para el monto total */
-  .vehiculo-retirado-monto {
+  p:nth-child(6) {
     color: #e74c3c; /* Cambia el color según tus preferencias */
     font-weight: bold;
   }
