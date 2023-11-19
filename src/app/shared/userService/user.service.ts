@@ -17,7 +17,7 @@ export class UserService {
     return this.http.get<UserEntity[]>('http://localhost:8090/usuario/all');
   }
 
-  addStudent(student:UserEntity): Observable<UserEntity>{
+  add(student:UserEntity): Observable<UserEntity>{
     return this.http.post<UserEntity>("http://localhost:8090/usuario/add", student);
   }
 
@@ -29,7 +29,7 @@ export class UserService {
     );
   }
 
-  studentHome():Observable<UserEntity>{
+  home():Observable<UserEntity>{
     return this.http.get<UserEntity>("http://localhost:8090/usuario/details");
   }
 }

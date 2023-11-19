@@ -1,21 +1,38 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { UserEntity } from 'src/app/model/user/user-entity';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { UserService } from 'src/app/shared/userService/user.service';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
-import { SignupComponent } from './signup.component';
 
-describe('SignupComponent', () => {
-  let component: SignupComponent;
-  let fixture: ComponentFixture<SignupComponent>;
+@Component({
+  selector: 'app-signup',
+  templateUrl: './signup.component.html',
+  styleUrls: ['./signup.component.css'],
+  imports: [FormsModule],
+  standalone: true
+})
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [SignupComponent]
-    });
-    fixture = TestBed.createComponent(SignupComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+export class SignupComponent {
+  //modelo
+  formUser: UserEntity = {
+    id: 0,
+    name: '',
+    contrasenia: '',
+    rol: '',
+    correo: ''
+  };
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+  constructor(private userService: UserService,
+    private router: Router) {}
+
+  add(form: any) {
+      this.userService.add(this.formUser).subscribe(
+        
+    (data) => {
+        this.router.navigate(['/usuario/detail', data.id]);
+      }
+    );
+  }
+}

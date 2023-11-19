@@ -1,6 +1,6 @@
 <div class="center_page">
-    <h2>Login(Estudiante)</h2>
-    <form #studentForm="ngForm" (ngSubmit)="login(studentForm)">
+    <h2>Login</h2>
+    <form #userForm="ngForm" (ngSubmit)="login(userForm)">
     
     
         <div class="form-group">
@@ -8,7 +8,7 @@
             <input type="email" id="email" name="email" placeholder="Correo" [(ngModel)]="formUser.correo" required><br>
         </div>
         <br>
-        <button type="submit" class="btn btn-primary" [disabled]="!studentForm.form.valid">Registrar</button>
+        <button type="submit" class="btn btn-primary" [disabled]="!userForm.form.valid">Registrar</button>
         
     </form>
     </div>
