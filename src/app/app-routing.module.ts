@@ -6,6 +6,10 @@ import { VehiculoRetirarComponent } from './vehiculo/vehiculo-retirar/vehiculo-r
 import { PisoListComponent } from './piso/piso-list/piso-list/piso-list.component';
 import { VehiculoListByPisoComponent } from './vehiculo/vehiculo-list-by-piso/vehiculo-list-by-piso/vehiculo-list-by-piso.component';
 import { VehiculoCrearComponent } from './vehiculo/vehiculo-crear/vehiculo-crear/vehiculo-crear.component';
+import { HomeComponent } from './home/home/home.component';
+import { FAQComponent } from './FAQ/faq/faq.component';
+import { TipoVehiculoSliderComponent } from './tipo-vehiculo/tipo-vehiculo-slider/tipo-vehiculo-slider/tipo-vehiculo-slider.component';
+import { UsuarioCrearComponent } from './usuario/usuario-crear/usuario-crear/usuario-crear.component';
 import { LoginComponent } from './auth/login/login.component';
 
 const routes: Routes = [
@@ -15,9 +19,12 @@ const routes: Routes = [
   {path: 'gestionParqueadero/pisos', component:PisoListComponent},
   {path: 'gestionParqueadero/pisos/vehiculos/:id', component: VehiculoListByPisoComponent},
   {path: 'gestionParqueadero/pisos/:id/nuevoVehiculo',  component: VehiculoCrearComponent},
-  { path: 'auth/login/user', component: LoginComponent },
-  { path: '', pathMatch: 'full', redirectTo: '/gestionParqueadero/pisos' }
-];
+  {path: 'gestionParqueadero/home', component: HomeComponent},
+  {path: 'gestionParqueadero/tarifas', component: TipoVehiculoSliderComponent},
+  {path: '', pathMatch: 'full', redirectTo: 'gestionParqueadero/home' },
+  {path: 'gestionParqueadero/FAQ', component: FAQComponent},
+]; 
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

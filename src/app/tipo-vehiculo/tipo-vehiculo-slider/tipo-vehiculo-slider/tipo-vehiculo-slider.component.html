@@ -1,0 +1,15 @@
+<div class="slider-container">
+    <div class="arrow left" (click)="moveSlider(-1)">&#9664;</div>
+    <div class="slider" [style.transform]="'translateX(' + (-activeIndex * (300 / tipoVehiculos.length)) + '%)'">
+        <div *ngFor="let tipoV of tipoVehiculos; let i = index" class="slide" (click)="setActiveIndex(i)">
+            <img [src]="tipoV.urlImagen" alt="{{ tipoV.tipo }}">
+            <div class="slide-content">
+                <h2>{{ tipoV.tipo }}</h2>
+                <p>Tarifa: {{ tipoV.tarifa }}</p>
+                <p>Tipo de Vehículo: {{ tipoV.tipo }}</p>
+                <p>Dias: {{tipoV.dia}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="arrow right" (click)="moveSlider(1)">&#9654;</div>
+</div>

@@ -13,6 +13,9 @@ import { HeaderComponent } from './header/header/header.component';
 import { FormsModule } from '@angular/forms';
 import { UsuarioCrearComponent } from './usuario/usuario-crear/usuario-crear/usuario-crear.component';
 import { FooterComponent } from './footer/footer/footer.component';
+import { HomeComponent } from './home/home/home.component';
+import { FAQComponent } from './FAQ/faq/faq.component';
+import { TipoVehiculoSliderComponent } from './tipo-vehiculo/tipo-vehiculo-slider/tipo-vehiculo-slider/tipo-vehiculo-slider.component';
 import { LoginComponent } from './auth/login/login.component';
 
 
@@ -27,8 +30,7 @@ import { LoginComponent } from './auth/login/login.component';
     VehiculoListByPisoComponent,
     HeaderComponent,
     UsuarioCrearComponent,
-    FooterComponent,
-    LoginComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule,
