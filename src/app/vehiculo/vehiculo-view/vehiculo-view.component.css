@@ -6,35 +6,35 @@ div {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilos para el título h1 */
-h1 {
+  }
+  
+  /* Estilos para el título h1 */
+  h1 {
     font-size: 24px;
     color: #333;
     margin-bottom: 10px;
-}
-
-/* Estilos para los párrafos */
-p {
+  }
+  
+  /* Estilos para los párrafos */
+  p {
     margin: 10px 0;
     font-size: 16px;
     color: #555;
-}
-
-/* Estilos específicos para el id */
-p:nth-child(2) {
+  }
+  
+  /* Estilos específicos para el id */
+  p:nth-child(2) {
     font-weight: bold;
-}
-
-/* Estilos para el tipo de vehículo */
-p:nth-child(5) {
+  }
+  
+  /* Estilos para el tipo de vehículo */
+  p:nth-child(5) {
     font-weight: bold;
-}
-
-/* Estilos para la tarifa */
-p:nth-child(6) {
-    color: #e74c3c;
-    /* Cambia el color según tus preferencias */
+  }
+  
+  /* Estilos para la tarifa */
+  p:nth-child(6) {
+    color: #e74c3c; /* Cambia el color según tus preferencias */
     font-weight: bold;
-}
+  }
+  

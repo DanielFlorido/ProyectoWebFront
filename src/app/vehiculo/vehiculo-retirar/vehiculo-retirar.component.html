@@ -1,6 +1,9 @@
 <div *ngIf="dtoVehiculo$ | async as dtoVehiculo">
-    <h1>vehiculo retirado</h1>
-    <p>{{dtoVehiculo.vehiculo.id}}</p>  
-    <p>{{dtoVehiculo.tiempo}}</p>
-    <p>{{dtoVehiculo.montoTotal}}</p>  
+    <div *ngIf="dtoVehiculo$ | async as dtoVehiculo" class="vehiculo-retirado-container">
+        <h1 class="vehiculo-retirado-title">Vehículo Retirado</h1>
+        <p class="vehiculo-retirado-info vehiculo-retirado-id">{{dtoVehiculo.vehiculo.id}}</p>
+        <p class="vehiculo-retirado-info vehiculo-retirado-tiempo">{{dtoVehiculo.tiempo}}</p>
+        <p class="vehiculo-retirado-info vehiculo-retirado-monto">{{dtoVehiculo.montoTotal}}</p>
+      </div>
+      
 </div>
