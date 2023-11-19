@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Route, Router } from '@angular/router';
 import { Piso } from 'src/app/model/piso/piso';
-import { PisoService } from 'src/app/shared/piso.service';
+import { PisoService } from 'src/app/shared/pisoService/piso.service';
 
 @Component({
   selector: 'app-piso-list',

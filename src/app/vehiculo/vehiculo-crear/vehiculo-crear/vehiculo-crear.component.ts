@@ -1,4 +1,4 @@
-import { PisoService } from './../../../shared/piso.service';
+import { PisoService } from '../../../shared/pisoService/piso.service';
 import { VehiculoService } from './../../../shared/vehiculoService/vehiculo.service';
 import { Piso } from 'src/app/model/piso/piso';
 import { Vehiculo } from './../../../model/vehiculo/vehiculo';

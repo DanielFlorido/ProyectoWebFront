@@ -1,5 +1,5 @@
 import { VehiculoService } from './../../shared/vehiculoService/vehiculo.service';
-import { PisoService } from './../../shared/piso.service';
+import { PisoService } from '../../shared/pisoService/piso.service';
 import { Component, OnInit } from "@angular/core";
 import { Vehiculo } from 'src/app/model/vehiculo/vehiculo';
 

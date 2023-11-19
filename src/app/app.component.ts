@@ -1,7 +1,7 @@
 import { TipoVehiculo } from './model/vehiculo/tipo-vehiculo';
 import { Piso } from './model/piso/piso';
 import { Vehiculo } from './model/vehiculo/vehiculo';
-import { PisoService } from './shared/piso.service';
+import { PisoService } from './shared/pisoService/piso.service';
 import { Component } from '@angular/core';
 import { Edificio } from './model/edificio/edificio';
 import { HttpClient } from '@angular/common/http';

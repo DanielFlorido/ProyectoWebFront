@@ -2,8 +2,8 @@ import { Vehiculo } from 'src/app/model/vehiculo/vehiculo';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaderResponse, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { UpdateOperationDTO } from '../dto/update-operation-dto';
-import { Piso } from '../model/piso/piso';
+import { UpdateOperationDTO } from '../../dto/update-operation-dto';
+import { Piso } from '../../model/piso/piso';
 
 
 @Injectable({
