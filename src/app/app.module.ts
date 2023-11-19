@@ -13,6 +13,7 @@ import { HeaderComponent } from './header/header/header.component';
 import { FormsModule } from '@angular/forms';
 import { UsuarioCrearComponent } from './usuario/usuario-crear/usuario-crear/usuario-crear.component';
 import { FooterComponent } from './footer/footer/footer.component';
+import { LoginComponent } from './auth/login/login.component';
 
 
 @NgModule({
@@ -26,13 +27,14 @@ import { FooterComponent } from './footer/footer/footer.component';
     VehiculoListByPisoComponent,
     HeaderComponent,
     UsuarioCrearComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule,
+    FormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
