@@ -30,7 +30,11 @@ import { LoginComponent } from './auth/login/login.component';
     VehiculoListByPisoComponent,
     HeaderComponent,
     UsuarioCrearComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    FAQComponent,
+    TipoVehiculoSliderComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
