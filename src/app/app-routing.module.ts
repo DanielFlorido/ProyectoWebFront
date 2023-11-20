@@ -24,8 +24,8 @@ const routes: Routes = [
   {path: 'gestionParqueadero/tarifas', component: TipoVehiculoSliderComponent},
   {path: '', pathMatch: 'full', redirectTo: 'gestionParqueadero/home' },
   {path: 'gestionParqueadero/FAQ', component: FAQComponent},
-  { path: 'auth/login/user', component: LoginComponent },
-  { path: 'auth/signup/user', component: SignupComponent },
+  {path: 'auth/login/user', component: LoginComponent },
+  {path: 'auth/signup/user', component: SignupComponent },
 ]; 
 
 

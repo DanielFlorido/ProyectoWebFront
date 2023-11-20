@@ -1,6 +1,6 @@
 <div class="center_page">
-    <h2>Registrarse</h2>
     <form #userForm="ngForm" (ngSubmit)="add(userForm)">
+        <h2>Registrarse</h2>
         <div class="form-group">
             <label for="nombre">Nombre</label><br>
             <input type="text" id="nombre" name="nombre" placeholder="Nombre" [(ngModel)]="formUser.name" required><br>
