@@ -17,8 +17,8 @@ export class UserService {
     return this.http.get<UserEntity[]>('http://localhost:8090/usuario/all');
   }
 
-  add(student:UserEntity): Observable<UserEntity>{
-    return this.http.post<UserEntity>("http://localhost:8090/usuario/add", student);
+  add(user:UserEntity): Observable<UserEntity>{
+    return this.http.post<UserEntity>("http://localhost:8090/usuario/add", user);
   }
 
   login(user:UserEntity):Observable<String>{
