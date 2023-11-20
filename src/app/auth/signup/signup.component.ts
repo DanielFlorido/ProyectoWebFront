@@ -2,7 +2,6 @@ import { UserEntity } from 'src/app/model/user/user-entity';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { UserService } from 'src/app/shared/userService/user.service';
-import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 
@@ -31,7 +30,7 @@ export class SignupComponent {
       this.userService.add(this.formUser).subscribe(
         
     (data) => {
-        this.router.navigate(['/usuario/detail', data.id]);
+        this.router.navigate(['/gestionParqueadero/home', data.id]);
       }
     );
   }

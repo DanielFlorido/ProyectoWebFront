@@ -12,12 +12,13 @@ import { TipoVehiculoSliderComponent } from './tipo-vehiculo/tipo-vehiculo-slide
 import { UsuarioCrearComponent } from './usuario/usuario-crear/usuario-crear/usuario-crear.component';
 import { LoginComponent } from './auth/login/login.component';
 import { SignupComponent } from './auth/signup/signup.component';
+import { AuthGuard } from './auth/guard/guardia.guard';
 
 const routes: Routes = [
   {path: 'gestionParqueadero/buscarVehiculo/:id', component: VehiculoViewComponent},
-  {path: 'gestionParqueadero/list', component: VehiculoListComponent},
+  {path: 'gestionParqueadero/list', component: VehiculoListComponent,canActivate: [AuthGuard],data: { roles: ['Usuario'] }},
   {path: 'gestionParqueadero/pisos/retirarVehiculo/:id', component: VehiculoRetirarComponent},
-  {path: 'gestionParqueadero/pisos', component:PisoListComponent},
+  {path: 'gestionParqueadero/pisos', component:PisoListComponent,canActivate: [AuthGuard],data: { roles: ['Usuario'] }},
   {path: 'gestionParqueadero/pisos/vehiculos/:id', component: VehiculoListByPisoComponent},
   {path: 'gestionParqueadero/pisos/:id/nuevoVehiculo',  component: VehiculoCrearComponent},
   {path: 'gestionParqueadero/home', component: HomeComponent},
