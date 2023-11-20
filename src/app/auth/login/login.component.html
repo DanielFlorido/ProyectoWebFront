@@ -1,7 +1,10 @@
 <div class="center_page">
     <div class="left-side">
         <!-- Imagen aquí -->
-        <img src= "https://firebasestorage.googleapis.com/v0/b/taller-3-6cd33.appspot.com/o/images%2Fparking.jpg?alt=media&token=4a6ddd16-1852-47e7-90c2-7cce78859e54" alt="Imagen de fondo">
+        <img src="https://firebasestorage.googleapis.com/v0/b/taller-3-6cd33.appspot.com/o/images%2Fparking.jpg?alt=media&token=4a6ddd16-1852-47e7-90c2-7cce78859e54"
+            alt="Imagen de fondo">
+        <button type="submit" class="btn btn-primary" [disabled]="!userForm.form.valid">Registrar</button>
+
     </div>
     <div class="right-side">
         <div class="login-form">
@@ -15,9 +18,7 @@
                     <label for="contrasenia">Contraseña</label><br>
                     <input type="text" id="contrasenia" name="contrasenia" placeholder="Contrasenia"
                         [(ngModel)]="formUser.contrasenia" required><br>
-
                     <br>
-                    <button type="submit" class="btn btn-primary" [disabled]="!userForm.form.valid">Registrar</button>
                 </div>
             </form>
         </div>
