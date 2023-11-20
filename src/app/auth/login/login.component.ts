@@ -26,7 +26,7 @@ export class LoginComponent {
       this.UserService.login(this.formUser).subscribe(
         (data) => {
           localStorage.setItem('token', String(data));
-          this.router.navigate(['/usuario/all']);
+          this.router.navigate(['/gestionParqueadero/home']);
         }
       )
     }
